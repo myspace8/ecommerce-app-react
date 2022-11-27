@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+img{
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    display: block;
+}
+
+a {
+    text-decoration: none;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 24px 0;
+    width: 90%;
+    margin: 0 auto;
+}
+
+header .left {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+header nav ul {
+    display: flex;
+    list-style: none;
+}
+
+header nav ul li a {
+    padding: 0 12px;
+    color: hsla(0, 0%, 0%, 0.538);
+}
+
+header .right {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+}
+
+header .right img {
+    width: 40px;
+    height: 40px;
+    object-fit: cover;
+}
+
+.special{
+    border: 2px solid orangered;
+    opacity: 0.5;
+}
+
+hr {
+    opacity: 0.3;
+    width: 90%;
+    margin: 0 auto;
+}
+
+main {
+    width: 80%;
+    margin: 0 auto;
+    padding: 50px 0;
+    display: flex;
+    gap: 90px;
+    align-items: center;
+
+}
+
+.sub-images {
+    display: flex;
+    justify-content: space-between;
+    gap: 25px;
+    margin-top: 20px;
+}
+
+.sub-images img {
+    width: 80px;
+    height: 80px;
+}
+
+
+.content h2{
+    margin-top: 20px;
+    font-size: 40px;
+    margin-bottom: 30px;
+}
+
+.content p {
+    opacity: 0.6;
+    font-size: 13px;
+    line-height: 21px;
+    display: flex;
+    align-items: center;
+}
+
+.content span{
+    font-size: 11px;
+    font-weight: bold;
+    color: orange;
+    text-transform: uppercase;
+
+}
+
+.price {
+    margin-top: 20px;
+}
+
+.price span {
+    font-size: 15px;
+    background-color: antiquewhite;
+    padding: 2px 2px;
+    border-radius: 5px;
+    margin-left: 10px;
+}
+
+.price p{
+    text-decoration: line-through;
+}
+
+.calc{
+    font-size: 15px;
+    display: flex;
+    gap: 20px;
+
+}
+
+.calc p{
+    background-color: whitesmoke;
+    color: black;
+    padding: 10px 5px;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.calc span{
+    color: orange;
+    padding: 10px 20px;
+
+}
+
+.calc button{
+    border: none;
+    border-radius: 5px;
+    padding: 12px 50px;
+    background-color: #fca605;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.calc button span {
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    nav {
+        display: none;
+    }
+
+    main {
+        flex-direction: column;
+        width: 100%;
+        gap: 40px;
+    }
+
+    .content {
+        margin: 0 16px;
+    }
+
+    .sub-images {
+        display: none;
+    }
+
+    .main-image img {
+        border-radius: 0;
+    }
+
+    .price {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 40px;
+        margin-bottom: 20px;
+    }
+
+    .calc {
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .calc p {
+        display: flex;
+        justify-content: space-between;
+    }
+}
